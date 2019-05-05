@@ -21,7 +21,7 @@ int _NSGetExecutablePath_patched(char* path, uint32_t* size) {
     for(uint32_t i = 0; i < imageCount; i++) {
         const char *dyld = _dyld_get_image_name(i);
         imageName = [[NSString alloc] initWithUTF8String:dyld];
-//        if ([imageName hasSuffix:@"SpaceShooter.framework/SpaceShooter"]) {
+//        if ([imageName hasSuffix:@"testliboc.framework/testliboc"]) {
 //            break;
 //        }
     }
